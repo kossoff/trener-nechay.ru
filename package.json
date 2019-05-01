@@ -1,0 +1,12 @@
+{
+  "name": "white-crow-shop",
+  "private": true,
+  "dependencies": {
+    "tachyons": "^4.9.1"
+  },
+  "version": "1.0.0",
+  "description": "belayavorona.shop",
+  "main": "index.js",
+  "author": "Anthony K. @Big Mac <off.koss@gmail.com>",
+  "license": "MIT"
+}

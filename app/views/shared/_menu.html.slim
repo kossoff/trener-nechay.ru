@@ -1,0 +1,26 @@
+ul.menu.dropdown(data-dropdown-menu)
+  li.is-dropdown-submenu-parent
+    = link_to 'Обо мне', '/resume'
+    ul.menu
+      li = link_to 'Основная деятельность', 'resume'
+      li = link_to 'Сертификаты', '/certificates'
+      li = link_to 'Клиенты', '/clients'
+  li.is-dropdown-submenu-parent
+    = link_to 'Тренинги', '/trainings'
+    ul.menu
+      li = link_to 'Руководителям', '/trainings-for-chiefs'
+      li = link_to 'Специалистам', '/trainings-for-specialists'
+      li = link_to 'Тренерам и наставникам', '/trainings-for-coaches'
+  li.is-dropdown-submenu-parent
+    = link_to 'Комплексные программы', '/complex-programms'
+    ul.menu
+      li = link_to 'Комплексная программа развития руководителей', '/chief-grow'
+      li = link_to 'Программа «Командная работа»', '/teamwork'
+      li = link_to 'Программа адаптации персонала «Светофор»', '/traffic-light'
+  li.is-dropdown-submenu-parent
+    = link_to 'Игры', '/games'
+    ul.menu
+      li = link_to 'Бизнес-симуляция «Offer»', '/game-offer'
+      li = link_to 'Игровое решение для обучения стандартам', '/game-standard'
+      li = link_to 'Управленческая игра «Пазлы управления»', '/puzzles'
+  li = link_to 'Контакты', '/contacts'
