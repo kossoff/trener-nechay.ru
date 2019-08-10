@@ -1,0 +1,28 @@
+= form_with model: @order do |f|
+  - if @order.errors.any?
+    #error_explanation
+      h2 = "#{pluralize(@order.errors.count, "error")} prohibited this order from being saved:"
+      ul
+        - @order.errors.full_messages.each do |message|
+          li = message
+
+  .field
+    = f.hidden_field :item_title
+
+  .field
+    = f.label :name, 'Представьтесь'
+    = f.text_field :name, required: true, placeholder: 'Имя'
+
+  .field
+    = f.label :email, 'Электронная почта'
+    = f.text_field :email, required: true, placeholder: 'mail@example.org'
+
+  .field
+    = f.label :phone, 'Телефон'
+    = f.text_field :phone, placeholder: '+7 (123) 456-78-90 (вводить не обязательно)'
+
+  .field
+    = f.label :note, 'Примечание'
+    = f.text_area :note, rows: 3
+
+  .actions = f.submit 'Заказать', class: 'button expanded'

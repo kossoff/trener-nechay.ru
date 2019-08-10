@@ -1,0 +1,19 @@
+h1 = @order.item_title
+
+table
+  tbody
+    tr
+      td электронная почта:
+      td = @order.email
+    tr
+      td Имя:
+      td = @order.name
+    - if @order.phone.present?
+      tr
+        td Телефон
+        td = @order.phone
+
+- if @order.note.present?
+  p
+    strong> Примечание:
+    = @order.note
