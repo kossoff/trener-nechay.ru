@@ -52,6 +52,10 @@ $footer-height: 100px;
 .pages-frontpage {
   .top-bar {
     background: none !important;
+
+    ul {
+      background: black;
+    }
   }
 }
 
