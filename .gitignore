@@ -32,3 +32,4 @@
 /out
 .ruby-*
 */**/.DS_Store
+.env.*
