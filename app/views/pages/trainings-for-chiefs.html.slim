@@ -1,1 +1,59 @@
-h1.text-center = fa_icon 'wrench', text: 'В работе...'
+h1.text-center Тренинги для руководителей
+
+.row.small-up-1.large-up-4 data-equalizer='true' data-equalize-on='medium'
+  .column
+    .card.gold(data-equalizer-watch)
+      = link_to '/training-basic-management-skills' do
+        .card-divider Тренинг «Базовые управленческие навыки»
+        .card-section = image_tag 'space_ship_on_base.png', class: 'icon'
+        .card-section Цель: развить навыки коммуникации руководителя в части управления коллективом
+
+    = link_to 'Заказать', new_order_path(item_title: 'Тренинг Базовые управленческие навыки'), class: 'button large expanded', remote: true
+
+  .column
+    .card.gold(data-equalizer-watch)
+      = link_to '/training-chief-like-mentor' do
+        .card-divider Тренинг «Руководитель, как наставник»
+        .card-section = image_tag 'value.png', class: 'icon'
+        .card-section Цель: дать руководителям необходимый инструментарий, для результативного обучения и адаптации новичков на рабочем месте
+
+    = link_to 'Заказать', new_order_path(item_title: 'Тренинг Руководитель, как наставник'), class: 'button large expanded', remote: true
+
+  .column
+    .card(data-equalizer-watch)
+      .card-divider Тренинг «Нематериальная мотивация персонала»
+      .card-section = image_tag 'coach.png', class: 'icon'
+
+    = link_to 'Заказать', new_order_path(item_title: 'Тренинг Нематериальная мотивация персонала'), class: 'button large expanded', remote: true
+
+  .column
+    .card.gold(data-equalizer-watch)
+      = link_to '/training-effective-delegation' do
+        .card-divider Тренинг «Эффективное делегирование»
+        .card-section = image_tag 'interview.png', class: 'icon'
+        .card-section Цель: отработать навыки постановки задач и делегирования полномочий подчиненным
+
+    = link_to 'Заказать', new_order_path(item_title: 'Тренинг Эффективное делегирование'), class: 'button large expanded', remote: true
+
+  .column
+    .card.gold(data-equalizer-watch)
+      = link_to '/training-situational-leadership' do
+        .card-divider Тренинг «Ситуационное руководство и стили управления»
+        .card-section = image_tag 'recruitment.png', class: 'icon'
+        .card-section Цель: сформировать навыки эффективного взаимодействия с подчиненными, с опорой на модель ситуационного руководства
+
+    = link_to 'Заказать', new_order_path(item_title: 'Тренинг Ситуационное руководство и стили управления'), class: 'button large expanded', remote: true
+
+  .column
+    .card(data-equalizer-watch)
+      .card-divider Тренинг «Навыки командной работы»
+      .card-section = image_tag 'team.png', class: 'icon'
+
+    = link_to 'Заказать', new_order_path(item_title: 'Тренинг Навыки командной работы'), class: 'button large expanded', remote: true
+
+  .column
+    .card(data-equalizer-watch)
+      .card-divider Тренинг «Эффективное руководство»
+      .card-section = image_tag 'process.png', class: 'icon'
+
+    = link_to 'Заказать', new_order_path(item_title: 'Тренинг Эффективное руководство'), class: 'button large expanded', remote: true

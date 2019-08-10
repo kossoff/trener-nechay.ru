@@ -1,1 +1,33 @@
-h1.text-center = fa_icon 'wrench', text: 'В работе...'
+h1.text-center Тренинги для специалистов
+
+.row.small-up-1.large-up-4 data-equalizer='true' data-equalize-on='medium'
+  .column
+    .card.minty(data-equalizer-watch)
+      = link_to '/training-emotional-intellect' do
+        .card-divider Тренинг «Развитие эмоционального интеллекта сотрудников»
+        .card-section = image_tag 'lover.png', class: 'icon'
+        .card-section
+          p Цель: развить эмоциональный интеллект сотрудников в опоре на модель Д. Гоулмана
+
+    = link_to 'Заказать', new_order_path(item_title: 'Тренинг Развитие эмоционального интеллекта'), class: 'button large expanded', remote: true
+
+  .column
+    .card(data-equalizer-watch)
+      .card-divider Тренинг «Долгосрочная продажа, как инструмент удержания клиента»
+      .card-section = image_tag 'development.png', class: 'icon'
+
+    = link_to 'Заказать', new_order_path(item_title: 'Тренинг Долгосрочная продажа, как инструмент удержания клиента'), class: 'button large expanded', remote: true
+
+  .column
+    .card(data-equalizer-watch)
+      .card-divider Тренинг «Стандарты работы с клиентами»
+      .card-section = image_tag 'feedback.png', class: 'icon'
+
+    = link_to 'Заказать', new_order_path(item_title: 'Тренинг Стандарты работы с клиентами'), class: 'button large expanded', remote: true
+
+  .column
+    .card(data-equalizer-watch)
+      .card-divider Тренинг «Продажа по телефону. Сотрудник сall-центра»
+      .card-section = image_tag '24hours.png', class: 'icon'
+
+    = link_to 'Заказать', new_order_path(item_title: 'Тренинг Продажа по телефону. Сотрудник сall-центра'), class: 'button large expanded', remote: true

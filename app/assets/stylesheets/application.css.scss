@@ -18,8 +18,10 @@
 @import 'tachyons/css/tachyons';
 @import 'foundation_and_overrides';
 
-$color-green:   rgb(60, 183, 171);
+$color-minty:   rgb(60, 183, 171);
 $color-purple: rgb(119, 91, 112);
+$color-gold: rgb(192, 167, 114);
+$footer-height: 100px;
 
 .background-overlay {
   font-family:monospace;
@@ -50,5 +52,140 @@ $color-purple: rgb(119, 91, 112);
 .pages-frontpage {
   .top-bar {
     background: none !important;
+  }
+}
+
+.card {
+  .button {
+    color: white !important;
+  }
+
+  .card-section {
+    text-align: center;
+
+    img.icon {
+      margin: 2rem;
+      width: 128px;
+    }
+
+    ul {
+      text-align: left;
+    }
+  }
+
+  &.purple {
+    a {
+      color: $color-purple;
+    }
+
+    .card-divider {
+      background: $color-purple;
+      color: white !important;
+    }
+  }
+
+  &.minty {
+    a {
+        color: $color-minty;
+      }
+
+    .card-divider {
+      background: $color-minty;
+      color: white !important;
+    }
+  }
+
+  &.gold {
+    a {
+        color: $color-gold;
+      }
+
+    .card-divider {
+      background: $color-gold;
+      color: white !important;
+    }
+  }
+
+  &:hover {
+    &.purple {
+      a {
+        color: darken($color-purple, 10%);
+      }
+
+      .card-divider {
+        background: darken($color-purple, 10%);
+      }
+    }
+
+    &.minty {
+      a {
+        color: darken($color-minty, 10%);
+      }
+
+      .card-divider {
+        background: darken($color-minty, 10%);
+      }
+    }
+
+    &.gold {
+      a {
+        color: darken($color-gold, 10%);
+      }
+
+      .card-divider {
+        background: darken($color-gold, 10%);
+      }
+    }
+  }
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Marmelad', sans-serif !important;
+}
+
+body {
+  font-family: 'Ubuntu', sans-serif !important;
+
+  &.not-front {
+    .content-wrapper {
+      min-height: calc(100vh - 100px); // $footer-height = 100px
+      padding-bottom: 4rem;
+
+      header {
+        margin-bottom: 2rem;
+      }
+    }
+
+    footer {
+      background: #ececec;
+      border-top: 1px solid #ccc;
+      height: $footer-height;
+      padding-top: 2rem;
+    }
+  }
+}
+
+.top-bar-title {
+  a,
+  a:hover {
+    color: $white;
+  }
+}
+
+// https://foundation.zurb.com/building-blocks/blocks/responsive-sticky-menu.html
+// https://foundation.zurb.com/building-blocks/blocks/topbar-responsive.html
+// https://zurb.com/university/lessons/how-to-re-create-top-bar-with-foundation-6
+
+.no-js {
+  @include breakpoint(small only) {
+    .top-bar {
+      display: none;
+    }
+  }
+
+  @include breakpoint(medium) {
+    .title-bar {
+      display: none;
+    }
   }
 }

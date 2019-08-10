@@ -1,1 +1,41 @@
-h1.text-center = fa_icon 'wrench', text: 'В работе...'
+h1.text-center Тренинги для тренеров и наставников
+
+.row.small-up-1.large-up-4 data-equalizer='true' data-equalize-on='medium'
+  .column
+    .card.purple(data-equalizer-watch)
+      = link_to '/training-coaching-and-adaptation-of-personal' do
+        .card-divider Тренинг «Наставничество и адаптация персонала»
+        .card-section = image_tag 'seeding.png', class: 'icon'
+        .card-section Цель: дать участникам инструменты, результативного обучения на рабочем месте
+
+    = link_to 'Заказать', new_order_path(item_title: 'Тренинг Наставничество и адаптация персонала'), class: 'button large expanded', remote: true
+
+  .column
+    .card.purple(data-equalizer-watch)
+      = link_to '/training-mentoring-and-feedback' do
+        .card-divider Тренинг «Наставничество и обратная связь»
+        .card-section = image_tag 'feedback2.png', class: 'icon'
+        .card-section Цель: передать участникам инструменты, необходимые для обучения новичков на рабочем месте
+
+    = link_to 'Заказать', new_order_path(item_title: 'Тренинг Наставничество и обратная связь'), class: 'button large expanded', remote: true
+
+  .column
+    .card(data-equalizer-watch)
+      .card-divider Тренинг «Оценка и подбор персонала»
+      .card-section = image_tag 'research.png', class: 'icon'
+
+    = link_to 'Заказать', new_order_path(item_title: 'Тренинг Оценка и подбор персонала'), class: 'button large expanded', remote: true
+
+  .column
+    .card(data-equalizer-watch)
+      .card-divider Тренинг «Развитие тренеров и наставников»
+      .card-section = image_tag 'business_and_finance.png', class: 'icon'
+
+    = link_to 'Заказать', new_order_path(item_title: 'Тренинг Развитие тренеров и наставников'), class: 'button large expanded', remote: true
+
+  .column
+    .card(data-equalizer-watch)
+      .card-divider Тренинг «Тренер-новичок»
+      .card-section = image_tag 'waiter.png', class: 'icon'
+
+    = link_to 'Заказать', new_order_path(item_title: 'Тренинг Тренер-новичок'), class: 'button large expanded', remote: true
