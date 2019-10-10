@@ -45,9 +45,11 @@ h1.text-center Тренинги для руководителей
     = link_to 'Заказать', new_order_path(item_title: 'Тренинг Ситуационное руководство и стили управления'), class: 'button large expanded', remote: true
 
   .column
-    .card(data-equalizer-watch)
-      .card-divider Тренинг «Навыки командной работы»
-      .card-section = image_tag 'team.png', class: 'icon'
+    .card.gold(data-equalizer-watch)
+      = link_to '/training-teamwork-skills' do
+        .card-divider Тренинг «Навыки командной работы»
+        .card-section = image_tag 'team.png', class: 'icon'
+        .card-section Цель: освоить приемы, необходимые для успешного взаимодействия как внутри своего отдела, так и при взаимодействии с другими подразделениями Компании.
 
     = link_to 'Заказать', new_order_path(item_title: 'Тренинг Навыки командной работы'), class: 'button large expanded', remote: true
 
