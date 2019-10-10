@@ -143,6 +143,32 @@ $footer-height: 100px;
   }
 }
 
+.button {
+  &.gold {
+    background: darken($color-gold, 15%);
+
+    &:hover{
+      background: lighten($color-gold, 5%)
+    }
+  }
+
+  &.purple {
+    background: darken($color-purple, 15%);
+
+    &:hover{
+      background: lighten($color-purple, 5%)
+    }
+  }
+
+  &.minty {
+    background: darken($color-minty, 15%);
+
+    &:hover{
+      background: lighten($color-minty, 5%)
+    }
+  }
+}
+
 h1, h2, h3, h4 {
   font-family: 'Marmelad', sans-serif !important;
 }
