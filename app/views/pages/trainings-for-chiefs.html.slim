@@ -20,9 +20,11 @@ h1.text-center Тренинги для руководителей
     = link_to 'Заказать', new_order_path(item_title: 'Тренинг Руководитель, как наставник'), class: 'button large expanded gold', remote: true
 
   .column
-    .card(data-equalizer-watch)
-      .card-divider Тренинг «Нематериальная мотивация персонала»
-      .card-section = image_tag 'coach.png', class: 'icon'
+    .card.gold(data-equalizer-watch)
+      = link_to '/training-intangible-motivation' do
+        .card-divider Тренинг «Нематериальная мотивация персонала»
+        .card-section = image_tag 'coach.png', class: 'icon'
+        .card-section Цель: развить навыки мотивации подчиненных
 
     = link_to 'Заказать', new_order_path(item_title: 'Тренинг Нематериальная мотивация персонала'), class: 'button large expanded gold', remote: true
 
