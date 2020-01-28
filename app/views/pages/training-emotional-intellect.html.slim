@@ -1,3 +1,10 @@
+nav
+  ul.breadcrumbs
+    li = link_to (fa_icon 'home', text: 'Главная'), root_path
+    li = link_to 'Тренинги', '/trainings'
+    li = link_to 'Специалистам', '/trainings-for-specialists'
+    li.disabled «Развитие эмоционального интеллекта
+
 h1 Программа тренинга «Развитие эмоционального интеллекта»
 
 p
@@ -72,3 +79,11 @@ ul
       li пользоваться методами управления эмоциями в общении с подчиненными и коллегами.
 
 = link_to 'Заказать', new_order_path(item_title: 'Тренинг Развитие эмоционального интеллекта'), class: 'button large expanded', remote: true
+
+br
+nav
+  ul.breadcrumbs
+    li = link_to (fa_icon 'home', text: 'Главная'), root_path
+    li = link_to 'Тренинги', '/trainings'
+    li = link_to 'Специалистам', '/trainings-for-specialists'
+    li.disabled «Развитие эмоционального интеллекта

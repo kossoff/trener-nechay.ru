@@ -1,3 +1,10 @@
+nav
+  ul.breadcrumbs
+    li = link_to (fa_icon 'home', text: 'Главная'), root_path
+    li = link_to 'Тренинги', '/trainings'
+    li = link_to 'Руководителям', '/trainings-for-chiefs'
+    li.disabled Эффективное делегирование
+
 h1.text-center Тренинг «Эффективное делегирование»
 
 p
@@ -60,3 +67,11 @@ h2 5. Ошибки при делегировании
 ul
   li Установки руководителя
   li Признаки неэффективного процесса делегирования
+
+br
+nav
+  ul.breadcrumbs
+    li = link_to (fa_icon 'home', text: 'Главная'), root_path
+    li = link_to 'Тренинги', '/trainings'
+    li = link_to 'Руководителям', '/trainings-for-chiefs'
+    li.disabled Эффективное делегирование

@@ -1,3 +1,10 @@
+nav
+  ul.breadcrumbs
+    li = link_to (fa_icon 'home', text: 'Главная'), root_path
+    li = link_to 'Тренинги', '/trainings'
+    li = link_to 'Руководителям', '/trainings-for-chiefs'
+    li.disabled Руководитель, как наставник
+
 h1.text-center Тренинг «Руководитель, как наставник»
 
 p
@@ -43,3 +50,11 @@ ul
   li Использование инструментов наставничества для эффективной адаптации новичка
   li Выбор и планирование обучающих мероприятий для стажера
   li Методы оценки и обратная связь при адаптации
+
+br
+nav
+  ul.breadcrumbs
+    li = link_to (fa_icon 'home', text: 'Главная'), root_path
+    li = link_to 'Тренинги', '/trainings'
+    li = link_to 'Руководителям', '/trainings-for-chiefs'
+    li.disabled Руководитель, как наставник

@@ -1,3 +1,10 @@
+nav
+  ul.breadcrumbs
+    li = link_to (fa_icon 'home', text: 'Главная'), root_path
+    li = link_to 'Тренинги', '/trainings'
+    li = link_to 'Руководителям', '/trainings-for-chiefs'
+    li.disabled Навыки командной работы
+
 h1 Тренинг «Навыки командной работы»
 p
   strong> Цель:
@@ -30,3 +37,11 @@ p
     ' Тренинг может быть частью
     = link_to 'Комплексной программы «Командная работа»',  '/teamwork'
   | или может быть дополнен любой активностью из представленной программы.
+
+br
+nav
+  ul.breadcrumbs
+    li = link_to (fa_icon 'home', text: 'Главная'), root_path
+    li = link_to 'Тренинги', '/trainings'
+    li = link_to 'Руководителям', '/trainings-for-chiefs'
+    li.disabled Навыки командной работы

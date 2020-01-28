@@ -1,3 +1,9 @@
+nav
+  ul.breadcrumbs
+    li = link_to (fa_icon 'home', text: 'Главная'), root_path
+    li = link_to 'Комплексные программы', '/complex-programms'
+    li.disabled Программа развития руководителей
+
 h1 Комплексная программа развития руководителей
 
 h2 Формат проведения
@@ -124,3 +130,10 @@ ul
   li Этапы коучингового процесса;
   li Стадии коучинга
   li Коучинг в работе руководителя
+
+br
+nav
+  ul.breadcrumbs
+    li = link_to (fa_icon 'home', text: 'Главная'), root_path
+    li = link_to 'Комплексные программы', '/complex-programms'
+    li.disabled Программа развития руководителей

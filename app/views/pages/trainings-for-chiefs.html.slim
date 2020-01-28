@@ -1,3 +1,10 @@
+nav
+  ul.breadcrumbs
+    li = link_to (fa_icon 'home', text: 'Главная'), root_path
+    li = link_to 'Тренинги', '/trainings'
+    li.disabled Руководителям
+
+
 h1.text-center Тренинги для руководителей
 
 .row.small-up-1.large-up-4 data-equalizer='true' data-equalize-on='medium'

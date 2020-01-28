@@ -1,3 +1,10 @@
+nav
+  ul.breadcrumbs
+    li = link_to (fa_icon 'home', text: 'Главная'), root_path
+    li = link_to 'Тренинги', '/trainings'
+    li = link_to 'Тренерам и наставникам', '/trainings-for-coaches'
+    li.disabled Наставничество и обратная связь
+
 h1.text-center Тренинг «Наставничество и обратная связь»
 
 p
@@ -116,3 +123,10 @@ ul
   li Ролевые и деловые игры
   li Решение кейсов
   li Просмотр и анализ видео
+
+nav
+  ul.breadcrumbs
+    li = link_to (fa_icon 'home', text: 'Главная'), root_path
+    li = link_to 'Тренинги', '/trainings'
+    li = link_to 'Тренерам и наставникам', '/trainings-for-coaches'
+    li.disabled Наставничество и обратная связь

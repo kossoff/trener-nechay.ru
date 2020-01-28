@@ -1,3 +1,9 @@
+nav
+  ul.breadcrumbs
+    li = link_to (fa_icon 'home', text: 'Главная'), root_path
+    li = link_to 'Игры', '/games'
+    li.disabled Бизнес-симуляция «Offer»
+
 h1.text-center Игра для изучения продуктовой линейки на примере бизнес-симуляции «Offer», созданной специально для Mriya Resort & SPA 5*
 
 p
@@ -27,3 +33,10 @@ p Для победы участникам необходимо показать
 p
   strong> Количество участников:
   | 25 человек (5 столов по 5 участников).
+
+br
+nav
+  ul.breadcrumbs
+    li = link_to (fa_icon 'home', text: 'Главная'), root_path
+    li = link_to 'Игры', '/games'
+    li.disabled Бизнес-симуляция «Offer»

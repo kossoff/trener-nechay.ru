@@ -1,3 +1,10 @@
+nav
+  ul.breadcrumbs
+    li = link_to (fa_icon 'home', text: 'Главная'), root_path
+    li = link_to 'Тренинги', '/trainings'
+    li = link_to 'Руководителям', '/trainings-for-chiefs'
+    li.disabled Ситуационное руководство
+
 h1.text-center Тренинг «Ситуационное руководство»
 p
   strong> Цель:
@@ -43,3 +50,11 @@ ul
   li Практика различных стилей поведения при управлении персоналом
   li Тренировка гибкости подходов к разным сотрудникам
   li Повышение внутренней клиенториентированности
+
+br
+nav
+  ul.breadcrumbs
+    li = link_to (fa_icon 'home', text: 'Главная'), root_path
+    li = link_to 'Тренинги', '/trainings'
+    li = link_to 'Руководителям', '/trainings-for-chiefs'
+    li.disabled Ситуационное руководство

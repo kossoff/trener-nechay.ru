@@ -1,3 +1,9 @@
+nav
+  ul.breadcrumbs
+    li = link_to (fa_icon 'home', text: 'Главная'), root_path
+    li = link_to 'Комплексные программы', '/complex-programms'
+    li.disabled Командная работа
+
 h1 Программа «Командная работа» &mdash; реализуется 3-мя этапами
 
 h2 Цель
@@ -105,3 +111,10 @@ ul
   li умением решать проблемы
   li уверенностью в себе
   li результативным лидерством
+
+br
+nav
+  ul.breadcrumbs
+    li = link_to (fa_icon 'home', text: 'Главная'), root_path
+    li = link_to 'Комплексные программы', '/complex-programms'
+    li.disabled Командная работа

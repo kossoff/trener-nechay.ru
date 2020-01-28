@@ -1,3 +1,10 @@
+nav
+  ul.breadcrumbs
+    li = link_to (fa_icon 'home', text: 'Главная'), root_path
+    li = link_to 'Тренинги', '/trainings'
+    li = link_to 'Руководителям', '/trainings-for-chiefs'
+    li.disabled Базовые управленческие навыки
+
 h1 Тренинг «Базовые управленческие навыки»
 
 p
@@ -60,3 +67,10 @@ ul
   li Создание плана изменений, с учетом мотивационных портретов сотрудников
 
 p В результате тренинга участники также могут получить домашнее задание, ориентированное на лучшее усвоение материала.
+br
+nav
+  ul.breadcrumbs
+    li = link_to (fa_icon 'home', text: 'Главная'), root_path
+    li = link_to 'Тренинги', '/trainings'
+    li = link_to 'Руководителям', '/trainings-for-chiefs'
+    li.disabled Базовые управленческие навыки

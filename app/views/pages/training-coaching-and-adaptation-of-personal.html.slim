@@ -1,3 +1,10 @@
+nav
+  ul.breadcrumbs
+    li = link_to (fa_icon 'home', text: 'Главная'), root_path
+    li = link_to 'Тренинги', '/trainings'
+    li = link_to 'Тренерам и наставникам', '/trainings-for-coaches'
+    li.disabled Наставничество и адаптация персонала
+
 h1.text-center Программа тренинга «Наставничество и адаптация персонала»
 
 p
@@ -108,3 +115,11 @@ ul
   li Ролевые и деловые игры
   li Решение кейсов
   li Просмотр и анализ видео
+
+br
+nav
+  ul.breadcrumbs
+    li = link_to (fa_icon 'home', text: 'Главная'), root_path
+    li = link_to 'Тренинги', '/trainings'
+    li = link_to 'Тренерам и наставникам', '/trainings-for-coaches'
+    li.disabled Наставничество и адаптация персонала

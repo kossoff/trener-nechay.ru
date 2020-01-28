@@ -1,3 +1,10 @@
+nav
+  ul.breadcrumbs
+    li = link_to (fa_icon 'home', text: 'Главная'), root_path
+    li = link_to 'Тренинги', '/trainings'
+    li = link_to 'Руководителям', '/trainings-for-chiefs'
+    li.disabled Эффективное руководство
+
 h1 Тренинг «Эффективное руководство»
 
 p
@@ -60,3 +67,11 @@ ol
   li разовьют свои умения в части работы с персоналом;
 
 p.lead Тренинг может быть дополнен управленческой игрой «#{link_to 'Пазлы управления', '/puzzles'}».
+
+br
+nav
+  ul.breadcrumbs
+    li = link_to (fa_icon 'home', text: 'Главная'), root_path
+    li = link_to 'Тренинги', '/trainings'
+    li = link_to 'Руководителям', '/trainings-for-chiefs'
+    li.disabled Эффективное руководство

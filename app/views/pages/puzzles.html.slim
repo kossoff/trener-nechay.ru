@@ -1,3 +1,9 @@
+nav
+  ul.breadcrumbs
+    li = link_to (fa_icon 'home', text: 'Главная'), root_path
+    li = link_to 'Игры', '/games'
+    li.disabled Пазлы управления
+
 h1.text-center Игра «Пазлы управления»
 
 p
@@ -29,3 +35,10 @@ p
 p
   strong> Длительность игры:
   | от 2 до 4 часов.
+
+br
+nav
+  ul.breadcrumbs
+    li = link_to (fa_icon 'home', text: 'Главная'), root_path
+    li = link_to 'Игры', '/games'
+    li.disabled Пазлы управления
