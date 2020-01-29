@@ -48,4 +48,4 @@ html lang='ru'
 
     #request-modal.reveal data-reveal='' data-animation-in='fade-in'
 
-    = render partial: 'shared/yametrika'
+    = render partial: 'shared/yametrika' if Rails.env.production?
