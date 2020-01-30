@@ -6,6 +6,8 @@ nav
 
 h1.text-center = fa_icon 'wrench', text: 'В работе...'
 
+= link_to 'Заказать', new_order_path(item_title: 'Светофор'), class: 'button large expanded', remote: true
+
 p.lead См. также:
 ul
   li = link_to 'Бизнес-симуляции «Offer»', '/game-offer'
