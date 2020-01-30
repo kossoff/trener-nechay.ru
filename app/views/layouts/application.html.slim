@@ -10,14 +10,9 @@ html lang='ru'
       | Екатерина Нечай
     = csrf_meta_tags
     = csp_meta_tag
-    / = favicon_link_tag asset_path('favicon.ico', skip_pipeline: true)
-    / = favicon_link_tag asset_path('apple-touch-icon.png', skip_pipeline: true), rel: 'apple-touch-icon', sizes: '32x32'
-    / = favicon_link_tag asset_path('favicon-32x32.png', skip_pipeline: true), rel: 'icon', sizes: '32x32', type: 'image/png'
-    / = favicon_link_tag asset_path('favicon-16x16.png', skip_pipeline: true), rel: 'icon', sizes: '32x32', type: 'image/png'
-    / = favicon_link_tag asset_path('safari-pinned-tab.svg', skip_pipeline: true), rel: 'mask-icon', color: '#5bbad5'
 
-    / = tag :link, rel: 'manifest', href: asset_path('site.webmanifest', skip_pipeline: true)
-    / = tag :meta, name: 'msapplication-config', href: asset_path('browserconfig.xml', skip_pipeline: true)
+    = render 'application/favicon'
+
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
     = stylesheet_link_tag "https://fonts.googleapis.com/css?family=Marmelad&display=swap"
