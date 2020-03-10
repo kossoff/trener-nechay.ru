@@ -5,11 +5,11 @@ html lang='ru'
     meta name='viewport' content='width=device-width, initial-scale=1.0'
     meta name='theme-color' content='#ffffff'
     meta name='msapplication-TileColor' content='#da532c'
+    meta http-equiv='X-UA-Compatible' content='IE=edge'
 
-    title
-      | Екатерина Нечай
     = csrf_meta_tags
     = csp_meta_tag
+    = display_meta_tags site: 'Екатерина Нечай'
 
     = render 'application/favicon'
 
