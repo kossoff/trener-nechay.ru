@@ -23,6 +23,18 @@ $color-purple: rgb(119, 91, 112);
 $color-gold: rgb(192, 167, 114);
 $footer-height: 100px;
 
+// <!-- list style type dash (original Russian typography)
+ul {
+  list-style-type: none;
+}
+
+ul li:before {
+  content: '\2014';
+  position: absolute;
+  margin-left: -20px;
+}
+// -->
+
 .background-overlay {
   font-family:monospace;
   background-color: black;
