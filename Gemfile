@@ -1,10 +1,12 @@
+# frozen_string_literal: true
+
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2'
 # Use postgresql as the database for Active Record
-gem 'pg', '~> 1.1.4'
+gem 'pg', '>= 0.18', '< 2.0'
 # Use Puma as the app server
 gem 'puma'
 # Use SCSS for stylesheets
@@ -27,9 +29,6 @@ gem 'turbolinks', '~> 5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
-# Reduces boot times through caching; required in config/boot.rb
-gem 'bootsnap', '>= 1.1.0', require: false
-
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
@@ -38,9 +37,10 @@ end
 group :development do
   gem 'listen', '>= 3.0.5', '< 3.2'
 
+  gem 'rails_real_favicon', require: false
+
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
   gem 'web-console', '>= 3.3.0'
-  gem 'rails_real_favicon'
 end
 
 group :test do
@@ -51,11 +51,13 @@ group :test do
   # gem 'chromedriver-helper'
 end
 
-gem 'slim-rails'
 gem 'autoprefixer-rails'
 gem 'font-awesome-rails'
 gem 'foundation-rails'
 gem 'jquery-rails'
 gem 'sprockets-es6' # need for foundation 6.5
-gem 'meta-tags'
+
+gem 'slim-rails'
+
 gem 'dotenv-rails'
+gem 'meta-tags'
